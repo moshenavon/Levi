@@ -23,4 +23,5 @@
 ## קרדיטים לתמונות (Unsplash License)
 - hero-bg-*.webp – Evgeni Tcherkasski
 
-אתר חי: https://moshenavon.github.io/Levi/
+אתר חי (ראשי): https://ramkol-shayarot.netlify.app/
+גיבוי ב-GitHub Pages: https://moshenavon.github.io/Levi/
