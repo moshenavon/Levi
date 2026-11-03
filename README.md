@@ -5,8 +5,9 @@
 
 ## קבצים
 - `index.html` – הדף עצמו
-- `assets/img/` – תמונות (זמניות, מ-Unsplash)
-- `preview/levi-speaker-landing.html` – עותק בקובץ אחד, עם התמונות מוטמעות, לשליחה ולצפייה
+- `assets/img/` – תמונות המוצר (מתיקיית הדרייב), וגם תמונות חנוכה מ-Unsplash
+- `assets/video/` – סרטוני המוצר (demo-1..4.mp4) ותמונות הפתיחה שלהם (demo-1..4.jpg)
+- `preview/levi-speaker-landing.html` – עותק בקובץ אחד לשליחה (התמונות מוטמעות, הסרטונים נטענים מהאתר החי)
 - `preview/*.jpg|png` – צילומי מסך לתצוגה מקדימה
 
 ## חיבור לטופס הגוגל
@@ -22,6 +23,5 @@
 ## קרדיטים לתמונות (Unsplash License)
 - hero-menorah.jpg – Evgeni Tcherkasski
 - menorah-colors.jpg – Robert Thiemann
-- convoy-night.jpg – Atul Pandey
-- city-night.jpg – Egor Myznik
-- speaker.jpg – Ingo Schulz
+
+אתר חי: https://moshenavon.github.io/Levi/

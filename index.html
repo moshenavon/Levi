@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>רמקול שיירת האור | מבצע חנוכה</title>
-<meta name="description" content="רמקול 400W מגנטי לגג הרכב, נולד בשיירת האור של צפת. 250₪ ליח' בהזמנת 10 יח', משלוח חינם. סגירת הזמנות: יב' כסלו.">
+<meta name="description" content="רמקול 400W מגנטי ועמיד לגשם לגג הרכב, נולד בשיירת האור של צפת. 250₪ ליח' בהזמנת 10 יח', משלוח חינם. סגירת הזמנות: יב' כסלו.">
 <meta property="og:title" content="רמקול שיירת האור – מבצע חנוכה 🕎">
-<meta property="og:description" content="400W · מגנטים חזקים · בלוטוס/USB + מיקרופון · מתחבר למצת. 250₪ ליח' בהזמנת 10 יח'.">
-<meta property="og:image" content="https://moshenavon.github.io/Levi/assets/img/hero-menorah.jpg">
+<meta property="og:description" content="400W · עמיד לגשם · מגנטים חזקים · בלוטוס/USB + מיקרופון · מתחבר למצת. 250₪ ליח' בהזמנת 10 יח'.">
+<meta property="og:image" content="https://moshenavon.github.io/Levi/assets/img/speaker-roof-front.jpg">
 <meta property="og:url" content="https://moshenavon.github.io/Levi/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0b1230">
@@ -65,11 +65,21 @@ a{color:var(--gold-2)}
     radial-gradient(60% 40% at 50% 35%,rgba(255,170,60,.12),transparent 70%),
     linear-gradient(180deg,rgba(11,18,48,.35) 0%,rgba(11,18,48,.55) 45%,var(--night) 92%)}
 @keyframes slowzoom{to{transform:scale(1.14)}}
-.hero__inner{padding:120px 0 72px;text-align:center}
+.hero__inner{padding:110px 0 64px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;text-align:start}
+.hero__inner .hero__cta{justify-content:flex-start}
+.hero__inner p.lead{margin-inline:0}
+.hero__product{margin:0;position:relative;border-radius:28px;overflow:hidden;transform:rotate(-2deg);
+  border:3px solid rgba(245,192,74,.55);box-shadow:0 0 0 8px rgba(245,192,74,.08),0 30px 80px rgba(0,0,0,.55),0 0 60px rgba(245,192,74,.25);
+  animation:floaty 6s ease-in-out infinite}
+.hero__product img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.hero__product figcaption{position:absolute;bottom:12px;inset-inline:12px;display:flex;gap:10px;align-items:center;
+  padding:10px 14px;border-radius:14px;background:rgba(11,18,48,.82);backdrop-filter:blur(6px);font-weight:700;font-size:15px}
+.hero__product figcaption span{background:var(--gold);color:#1b1300;border-radius:8px;padding:2px 8px;font-weight:800}
+@keyframes floaty{50%{transform:rotate(-2deg) translateY(-10px)}}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;
   background:rgba(11,18,48,.6);border:1px solid var(--line);backdrop-filter:blur(6px);
   font-weight:700;font-size:15px;color:var(--gold-2)}
-.hero h1{font-size:clamp(38px,8vw,78px);line-height:1.08;margin:18px 0 14px;text-shadow:0 4px 30px rgba(0,0,0,.5)}
+.hero h1{font-size:clamp(38px,4.6vw,64px);line-height:1.08;margin:18px 0 14px;text-shadow:0 4px 30px rgba(0,0,0,.5)}
 .hero h1 .glow{color:var(--gold);text-shadow:0 0 28px rgba(245,192,74,.55)}
 .hero p.lead{font-size:clamp(18px,2.6vw,22px);color:#e7e3d8;max-width:640px;margin:0 auto 28px}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
@@ -123,6 +133,44 @@ section{padding:84px 0}
 .feat p{margin:0;color:var(--muted);font-size:16px}
 .feat .tag{position:absolute;top:18px;inset-inline-end:18px;font-size:12px;font-weight:800;color:#1b1300;background:var(--gold);padding:3px 9px;border-radius:999px}
 
+.feat--wide{grid-column:1/-1;display:flex;gap:18px;align-items:center;
+  background:linear-gradient(90deg,rgba(96,165,250,.12),rgba(255,255,255,.04));border-color:rgba(96,165,250,.3)}
+.feat--wide .feat__icon{margin:0;flex:0 0 54px}
+
+/* kit */
+.kit{background:linear-gradient(180deg,var(--night),var(--night-2))}
+.kit__grid{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-top:36px}
+.kit__main{margin:0;border-radius:24px;overflow:hidden;border:1px solid var(--line)}
+.kit__main img{width:100%;height:100%;object-fit:cover}
+.kit__side{display:grid;gap:16px}
+.kit__card{margin:0;position:relative;border-radius:20px;overflow:hidden;min-height:220px;border:1px solid rgba(255,255,255,.1)}
+.kit__card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.kit__card figcaption{position:absolute;inset-inline:0;bottom:0;padding:40px 16px 14px;font-size:15px;color:#e7e3d8;background:linear-gradient(transparent,rgba(5,8,25,.9))}
+.kit__card figcaption b{display:block;color:var(--gold-2);font-size:18px}
+.kit__list{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kit__list li{display:flex;gap:10px;align-items:center;padding:14px;border-radius:14px;background:var(--card);border:1px solid rgba(255,255,255,.08);font-weight:700;font-size:15.5px}
+.kit__list span{font-size:22px}
+
+/* videos */
+.video-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.vid{margin:0;border-radius:20px;overflow:hidden;background:#000;border:1px solid var(--line)}
+.vid video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.vid figcaption{padding:10px 14px;font-weight:700;font-size:15px;background:var(--night-2)}
+
+/* gallery */
+.gallery{display:grid;grid-auto-flow:dense;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px;margin-top:36px}
+.g{padding:0;border:0;border-radius:16px;overflow:hidden;cursor:zoom-in;background:#000}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.g:hover img{transform:scale(1.06)}
+.g--wide{grid-column:span 2}
+.lightbox{border:0;padding:0;background:transparent;max-width:min(96vw,1200px);max-height:92vh}
+.lightbox::backdrop{background:rgba(3,6,20,.9)}
+.lightbox img{max-width:100%;max-height:88vh;border-radius:14px;display:block;margin:auto}
+.lb-close{position:fixed;top:14px;inset-inline-end:14px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:20px;cursor:pointer}
+
+.contact{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px 12px;justify-content:center;align-items:center;color:var(--muted)}
+.contact a{font-weight:800;font-size:18px;text-decoration:none;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+
 /* story */
 .story{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
 .story__img{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 70px rgba(0,0,0,.45)}
@@ -132,12 +180,6 @@ section{padding:84px 0}
 .checks li{display:flex;gap:12px;align-items:flex-start}
 .checks li::before{content:"✓";flex:0 0 26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px;color:#1b1300;background:var(--gold)}
 
-/* product strip */
-.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
-.strip figure{margin:0;border-radius:18px;overflow:hidden;position:relative;aspect-ratio:4/3}
-.strip img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
-.strip figure:hover img{transform:scale(1.06)}
-.strip figcaption{position:absolute;inset-inline:0;bottom:0;padding:28px 14px 12px;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.75))}
 
 /* pricing */
 .pricing{background:
@@ -191,7 +233,7 @@ form .btn{width:100%}
 .hp{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 
 /* warranty */
-.warranty{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.warranty{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
 .w{padding:22px;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03)}
 .w b{display:block;font-size:18px;margin-bottom:4px}
 .w p{margin:0;color:var(--muted);font-size:15.5px}
@@ -214,7 +256,16 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
 
 @media (max-width:900px){
   .features{grid-template-columns:1fr 1fr}
-  .story,.order{grid-template-columns:1fr}
+  .story,.order,.kit__grid{grid-template-columns:1fr}
+  .hero__inner{grid-template-columns:1fr;text-align:center;gap:34px}
+  .hero h1{font-size:clamp(38px,9vw,64px)}
+  .hero__inner .hero__cta{justify-content:center}
+  .hero__inner p.lead{margin-inline:auto}
+  .hero__product{max-width:440px;margin-inline:auto;width:100%}
+  .kit__side{grid-template-columns:1fr 1fr}
+  .kit__list{grid-template-columns:1fr 1fr}
+  .video-grid{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(3,1fr);grid-auto-rows:180px}
   .order__aside{position:relative;top:0;min-height:260px}
   .warranty{grid-template-columns:1fr}
   .sticky{display:block}
@@ -223,9 +274,12 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
   body{font-size:16px}
   section{padding:64px 0}
   .features{grid-template-columns:1fr}
-  .strip{grid-template-columns:1fr 1fr}
-  .strip figure:last-child{grid-column:1/-1}
   .row{grid-template-columns:1fr}
+  .kit__side,.kit__list{grid-template-columns:1fr}
+  .video-grid{gap:10px}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:8px}
+  .feat--wide{flex-direction:column;align-items:flex-start}
+  .warranty{grid-template-columns:1fr}
   .cd__box{min-width:58px}
   .price{font-size:72px}
   form{padding:22px 16px}
@@ -255,14 +309,20 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
   </div>
 
   <div class="wrap hero__inner">
-    <span class="pill">🕎 מבצע חנוכה · המלאי מוגבל</span>
-    <h1 class="display">השיירה שלך<br>עומדת <span class="glow">להישמע אחרת</span></h1>
-    <p class="lead">רמקול 400W שנולד בשיירת האור של צפת. מצמידים לגג עם מגנטים, מחברים למצת, ומתחילים לנגן. בלי מגבר ובלי כבלים בכל הרכב.</p>
-    <div class="hero__cta">
-      <a class="btn" href="#order">אני רוצה להזמין ←</a>
-      <a class="btn ghost" href="#features">מה מקבלים?</a>
+    <div class="hero__text">
+      <span class="pill">🕎 מבצע חנוכה · המלאי מוגבל</span>
+      <h1 class="display">השיירה שלך<br>עומדת <span class="glow">להישמע אחרת</span></h1>
+      <p class="lead">רמקול 400W שנולד בשיירת האור של צפת. מצמידים לגג עם מגנטים, מחברים למצת, ומתחילים לנגן. בלי מגבר ובלי כבלים בכל הרכב.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#order">אני רוצה להזמין ←</a>
+        <a class="btn ghost" href="#videos">▶ צפו בסרטונים</a>
+      </div>
+      <div class="hero__price">רק <b>250<span class="cur">₪</span></b> ליח' · בהזמנת 10 יח' ומעלה · משלוח חינם</div>
     </div>
-    <div class="hero__price">רק <b>250<span class="cur">₪</span></b> ליח' · בהזמנת 10 יח' ומעלה · משלוח חינם</div>
+    <figure class="hero__product">
+      <img src="assets/img/speaker-roof-front.jpg" alt="רמקול השיירה מותקן על גג הרכב עם בסיס מגנטי" width="1400" height="1051">
+      <figcaption><span>400W</span> עמיד לגשם · מגנטי · 12V</figcaption>
+    </figure>
   </div>
 </header>
 
@@ -317,13 +377,21 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
       <article class="feat reveal">
         <div class="feat__icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
         <h3>מתחבר למצת הרכב</h3>
-        <p>חשמל ישר מהשקע ברכב, בלי סוללות ובלי גנרטור.</p>
+        <p>מקבל חשמל ישירות משקע המצת (12V DC), בלי סוללות ובלי גנרטור.</p>
       </article>
       <article class="feat reveal">
         <span class="tag">עברית</span>
         <div class="feat__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8" cy="10" r="1.5"/><circle cx="12" cy="10" r="1.5"/><circle cx="16" cy="10" r="1.5"/><path d="M7 15h10"/></svg></div>
         <h3>לחצנים בעברית</h3>
         <p>כל אחד מבין מה עושה כל כפתור, גם הנהג המתנדב בפעם הראשונה.</p>
+      </article>
+      <article class="feat feat--wide reveal">
+        <span class="tag">חורף? אין בעיה</span>
+        <div class="feat__icon"><svg viewBox="0 0 24 24"><path d="M20 15.5A4.5 4.5 0 0 0 17.5 7a6 6 0 0 0-11.4 1.5A4 4 0 0 0 6 16.5h13"/><path d="M8 19v2M12 19v2M16 19v2"/></svg></div>
+        <div>
+          <h3>עמיד לגשם</h3>
+          <p>חנוכה נופל בחורף, והרמקול בנוי לזה. ממשיכים לנגן גם כשמטפטף.</p>
+        </div>
       </article>
     </div>
   </div>
@@ -333,7 +401,7 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
 <section style="padding-top:20px">
   <div class="wrap story">
     <div class="story__img reveal">
-      <img src="assets/img/convoy-night.jpg" alt="רכב נוסע בלילה עם שובל אורות" loading="lazy">
+      <img src="assets/img/speaker-sunset.jpg" alt="הרמקול מותקן על גג רכב בשקיעה" loading="lazy">
       <span class="badge">🚗 נבדק בשטח · שיירת האור צפת</span>
     </div>
     <div class="reveal">
@@ -341,20 +409,88 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
       <h2 class="h2 display">נולד מתוך השיירה, בשביל השיירה</h2>
       <p class="sub">בכל שנה ראינו את אותו הדבר: מגברים כבדים, כבלים שמתנתקים ורמקולים שקשה לקבע. אז ייצרנו רמקול שפותר את כל זה, כדי שהמוזיקה והשמחה של חנוכה יגיעו לכל רחוב.</p>
       <ul class="checks">
-        <li>הרכבה על הגג בפחות מדקה</li>
-        <li>מתאים לכל רכב פרטי, ואן או טנדר</li>
+        <li>מצמידים לגג בשניות עם הבסיסים המגנטיים</li>
+        <li>עמיד לגשם, מתאים לימי החורף של חנוכה</li>
         <li>אידיאלי לשלוחים, למבצעים ולשיירות</li>
       </ul>
     </div>
   </div>
+</section>
+
+<!-- ================= KIT ================= -->
+<section class="kit" id="kit">
   <div class="wrap">
-    <div class="strip">
-      <figure class="reveal"><img src="assets/img/speaker.jpg" alt="רמקול" loading="lazy"><figcaption>סאונד שממלא את הרחוב</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/city-night.jpg" alt="רכבים בעיר בלילה" loading="lazy"><figcaption>מאירים את העיר</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/hero-menorah.jpg" alt="חנוכייה" loading="lazy" style="object-position:center 60%"><figcaption>פרסום הנס בכל פינה</figcaption></figure>
+    <div class="center reveal">
+      <span class="eyebrow">מה מקבלים</span>
+      <h2 class="h2 display">ערכה אחת, מוכנה לשיירה</h2>
+      <p class="sub">כל מה שצריך כדי להתחיל לנגן כבר בערכה. מוציאים, מצמידים, מחברים ויוצאים לדרך.</p>
+    </div>
+    <div class="kit__grid">
+      <figure class="kit__main reveal">
+        <img src="assets/img/kit.jpg" alt="הערכה המלאה: רמקול, בסיסים מגנטיים, יחידת שליטה ותקע למצת" loading="lazy">
+      </figure>
+      <div class="kit__side">
+        <figure class="kit__card reveal">
+          <img style="object-position:center 30%" src="assets/img/controller-hand.jpg" alt="יחידת השליטה עם מסך ולחצנים בעברית" loading="lazy">
+          <figcaption><b>יחידת שליטה בעברית</b>מסך ולחצנים ברורים: הבא, הקודם, הפעלה, השמעה, כריזה ועוד.</figcaption>
+        </figure>
+        <figure class="kit__card reveal">
+          <img src="assets/img/magnet-base.jpg" alt="בסיס מגנטי חזק" loading="lazy">
+          <figcaption><b>בסיסים מגנטיים חזקים</b>נצמדים לגג הרכב ומחזיקים את הרמקול יציב.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <ul class="kit__list reveal">
+      <li><span>🔊</span>רמקול 400W</li>
+      <li><span>🧲</span>בסיסים מגנטיים</li>
+      <li><span>🎛️</span>יחידת שליטה עם בלוטוס/USB ומיקרופון</li>
+      <li><span>🔌</span>תקע למצת הרכב (12V)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= VIDEOS ================= -->
+<section class="videos" id="videos">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">רואים ושומעים</span>
+      <h2 class="h2 display">הרמקול בפעולה</h2>
+      <p class="sub">צולם בשטח. הפעילו את הסאונד 🔊</p>
+    </div>
+    <div class="video-grid">
+      <figure class="vid reveal"><video controls playsinline preload="none" poster="assets/video/demo-1.jpg"><source src="assets/video/demo-1.mp4" type="video/mp4"></video><figcaption>על הגג, מוכן לשיירה</figcaption></figure>
+      <figure class="vid reveal"><video controls playsinline preload="none" poster="assets/video/demo-2.jpg"><source src="assets/video/demo-2.mp4" type="video/mp4"></video><figcaption>שליטה מתוך הרכב</figcaption></figure>
+      <figure class="vid reveal"><video controls playsinline preload="none" poster="assets/video/demo-3.jpg"><source src="assets/video/demo-3.mp4" type="video/mp4"></video><figcaption>שמעו את העוצמה</figcaption></figure>
+      <figure class="vid reveal"><video controls playsinline preload="none" poster="assets/video/demo-4.jpg"><source src="assets/video/demo-4.mp4" type="video/mp4"></video><figcaption>סיור מלא במוצר</figcaption></figure>
     </div>
   </div>
 </section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery-sec" id="gallery">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">גלריה</span>
+      <h2 class="h2 display">תמונות מהשטח</h2>
+    </div>
+    <div class="gallery">
+      <button type="button" class="g reveal g--wide" data-full="assets/img/g-roof-car.jpg"><img src="assets/img/g-roof-car.jpg" alt="הרמקול על גג רכב לבן" loading="lazy"></button>
+      <button type="button" class="g reveal" data-full="assets/img/g-hood.jpg"><img src="assets/img/g-hood.jpg" alt="הרמקול על מכסה המנוע" loading="lazy"></button>
+      <button type="button" class="g reveal" data-full="assets/img/g-roof-1.jpg"><img src="assets/img/g-roof-1.jpg" alt="הרמקול על הגג מקרוב" loading="lazy"></button>
+      <button type="button" class="g reveal" data-full="assets/img/g-controller.jpg"><img src="assets/img/g-controller.jpg" alt="יחידת השליטה עם לחצנים בעברית" loading="lazy"></button>
+      <button type="button" class="g reveal" data-full="assets/img/g-roof-side.jpg"><img src="assets/img/g-roof-side.jpg" alt="הרמקול מהצד" loading="lazy"></button>
+      <button type="button" class="g reveal" data-full="assets/img/g-cabin.jpg"><img src="assets/img/g-cabin.jpg" alt="הרמקול על הגג, מבט מתוך הרכב" loading="lazy"></button>
+      <button type="button" class="g reveal g--wide" data-full="assets/img/g-parking.jpg"><img src="assets/img/g-parking.jpg" alt="הרמקול על רכב בחניה בשקיעה" loading="lazy"></button>
+      <button type="button" class="g reveal" data-full="assets/img/g-horn.jpg"><img src="assets/img/g-horn.jpg" alt="הרמקול מקרוב" loading="lazy"></button>
+      <button type="button" class="g reveal" data-full="assets/img/g-kit-front.jpg"><img src="assets/img/g-kit-front.jpg" alt="הרמקול עם יחידת השליטה" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<dialog class="lightbox" id="lightbox" aria-label="תצוגת תמונה">
+  <button type="button" class="lb-close" aria-label="סגירה">✕</button>
+  <img id="lbImg" alt="">
+</dialog>
 
 <!-- ================= PRICING ================= -->
 <section class="pricing" id="price">
@@ -470,9 +606,10 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
   <div class="wrap">
     <div class="center reveal">
       <span class="eyebrow">שקיפות מלאה</span>
-      <h2 class="h2 display">אחריות ובטיחות</h2>
+      <h2 class="h2 display">אחריות, בטיחות וחיבור חשמל</h2>
     </div>
     <div class="warranty">
+      <div class="w alert reveal"><b>⚡ מקור מתח</b><p>יש לחבר את המכשיר <b style="display:inline;font-size:inherit">אך ורק</b> למקור מתח ישיר (DC) של 12V, דרך מצת הרכב.</p></div>
       <div class="w reveal"><b>🛡️ אחריות חודשיים</b><p>על מוצר לא תקין, עד חודשיים מיום הרכישה.</p></div>
       <div class="w reveal"><b>ℹ️ התקנה על הגג</b><p>אין אחריות על חיבור הרמקול לגג הרכב. ההתקנה היא באחריות המשתמש.</p></div>
       <div class="w alert reveal"><b>⚠️ חובה ראצ'ט</b><p>בנסיעה בין־עירונית ובמהירות מעל 100 קמ"ש חובה לקבע את הרמקול לגג הרכב עם רצועת ראצ'ט.</p></div>
@@ -490,13 +627,17 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
       <a class="btn wa js-share" href="#" target="_blank" rel="noopener">שיתוף בוואטסאפ 💬</a>
       <a class="btn" href="#order">להזמנה ←</a>
     </div>
+    <div class="contact">
+      <span>יש שאלה? כתבו לנו:</span>
+      <a href="mailto:ramkol770770@gmail.com" dir="ltr">✉️ ramkol770770@gmail.com</a>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    לוי נבון · שיירת האור צפת · חנוכה שמח! 🕎
+    לוי נבון · שיירת האור צפת · <a href="mailto:ramkol770770@gmail.com">ramkol770770@gmail.com</a><br>חנוכה שמח! 🕎
   </div>
 </footer>
 
@@ -653,9 +794,25 @@ footer{padding:36px 0 110px;text-align:center;color:var(--muted);font-size:14px;
       .catch(function(){
         btn.disabled = false; btn.textContent = "שליחת הזמנה 🕎";
         msg.className = "form-msg err";
-        msg.innerHTML = 'אופס, השליחה נכשלה. בדקו את החיבור לאינטרנט ונסו שוב, או <a href="' + GOOGLE_FORM_VIEW + '" target="_blank" rel="noopener">הזמינו ישירות בטופס הזה</a>.';
+        msg.innerHTML = 'אופס, השליחה נכשלה. בדקו את החיבור לאינטרנט ונסו שוב, או <a href="' + GOOGLE_FORM_VIEW + '" target="_blank" rel="noopener">הזמינו ישירות בטופס הזה</a>, או כתבו לנו ל־<a href="mailto:ramkol770770@gmail.com">ramkol770770@gmail.com</a>.';
       });
   });
+
+  /* ---------- videos: only one plays at a time ---------- */
+  var vids = document.querySelectorAll(".vid video");
+  vids.forEach(function(v){
+    v.addEventListener("play", function(){ vids.forEach(function(o){ if (o !== v) o.pause(); }); });
+  });
+
+  /* ---------- gallery lightbox ---------- */
+  var lb = byId("lightbox"), lbImg = byId("lbImg");
+  document.querySelectorAll(".g").forEach(function(g){
+    g.addEventListener("click", function(){
+      if (!lb.showModal) { window.open(g.dataset.full, "_blank"); return; }
+      lbImg.src = g.dataset.full; lbImg.alt = g.querySelector("img").alt; lb.showModal();
+    });
+  });
+  lb.addEventListener("click", function(e){ if (e.target !== lbImg) lb.close(); });
 
   function byId(id){ return document.getElementById(id); }
 })();
