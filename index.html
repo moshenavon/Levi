@@ -136,7 +136,13 @@ section{padding:72px 0}
 
 /* order */
 .order{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:start}
-.price-card{position:sticky;top:20px;padding:26px 24px;border-radius:22px;background:linear-gradient(180deg,rgba(245,192,74,.12),rgba(255,255,255,.03));border:1.5px solid var(--line)}
+.order__side{position:sticky;top:20px;display:grid;gap:16px}
+.tzave{position:relative;isolation:isolate;overflow:hidden;border-radius:22px;min-height:230px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px 24px;border:1px solid var(--line)}
+.tzave::before{content:"";position:absolute;inset:0;z-index:-2;background:url("assets/img/menorah-colors-900.webp") center 30%/cover}
+.tzave::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,18,48,.05) 0%,rgba(11,18,48,.9) 62%)}
+.tzave h3{font-size:28px;margin:0 0 6px;color:var(--gold-2);text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.tzave p{margin:0;color:#fff;font-size:16px;text-shadow:0 2px 10px rgba(0,0,0,.9)}
+.price-card{padding:26px 24px;border-radius:22px;background:linear-gradient(180deg,rgba(245,192,74,.12),rgba(255,255,255,.03));border:1.5px solid var(--line)}
 .price{font-family:"Suez One",serif;font-size:72px;line-height:1;color:var(--gold)}
 .price small{font-family:"Heebo",sans-serif;font-weight:800;font-size:34px}
 .price-card .per{color:var(--muted);margin-bottom:16px}
@@ -199,7 +205,7 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
   .hero__cta{justify-content:center}
   .hero__product{max-width:460px;width:100%;margin-inline:auto}
   .get,.order{grid-template-columns:1fr}
-  .price-card{position:static}
+  .order__side{position:static}
   .video-grid{grid-template-columns:1fr 1fr}
   .photos{grid-template-columns:repeat(3,1fr)}
   .sticky{display:block}
@@ -329,6 +335,7 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
       <p class="sub">ממלאים פרטים, ואנחנו חוזרים אליכם לתיאום המשלוח.</p>
     </div>
     <div class="order">
+      <div class="order__side">
       <aside class="price-card">
         <div class="price">250<small>₪</small></div>
         <div class="per">ליחידה · בהזמנת מינימום 10 יח'</div>
@@ -339,6 +346,11 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
         </ul>
         <p class="note">ייתכן שיהיה אפשר לרכוש יחידות בודדות, במחיר גבוה יותר ובתוספת משלוח.</p>
       </aside>
+      <div class="tzave">
+        <h3 class="display">"ואתה תצווה"</h3>
+        <p>כל רכב עם רמקול הוא עוד נקודה של אור ושמחה ברחוב. אם תארגנו הזמנה משותפת לכל השיירה, תגיעו בקלות למינימום.</p>
+      </div>
+      </div>
 
       <div>
         <form id="orderForm" novalidate>
