@@ -5,8 +5,8 @@
 
 ## קבצים
 - `index.html` – הדף עצמו
-- `assets/img/` – תמונות המוצר (מתיקיית הדרייב), וגם תמונות חנוכה מ-Unsplash
-- `assets/video/` – סרטוני המוצר (demo-1..4.mp4) ותמונות הפתיחה שלהם (demo-1..4.jpg)
+- `assets/img/` – תמונות המוצר (מתיקיית הדרייב) בגרסאות WebP בכמה גדלים, ורקע החנוכייה מ-Unsplash
+- `assets/video/` – סרטוני המוצר (demo-1..4.mp4) ותמונות הפתיחה שלהם (demo-1..4.webp)
 - `preview/levi-speaker-landing.html` – עותק בקובץ אחד לשליחה (התמונות מוטמעות, הסרטונים נטענים מהאתר החי)
 - `preview/*.jpg|png` – צילומי מסך לתצוגה מקדימה
 
@@ -21,7 +21,6 @@
 אפשר לפרסם בחינם ב-GitHub Pages (Settings → Pages → Branch), ב-Netlify או ב-Vercel.
 
 ## קרדיטים לתמונות (Unsplash License)
-- hero-menorah.jpg – Evgeni Tcherkasski
-- menorah-colors.jpg – Robert Thiemann
+- hero-bg-*.webp – Evgeni Tcherkasski
 
 אתר חי: https://moshenavon.github.io/Levi/
