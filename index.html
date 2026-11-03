@@ -69,17 +69,17 @@ a{color:var(--gold-2)}
 
 /* ---------- HERO ---------- */
 .hero{position:relative;isolation:isolate;overflow:hidden}
-.hero__bg{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero__bg{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:blur(3px) brightness(.55) saturate(.8);transform:scale(1.05)}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(11,18,48,.55) 0%,rgba(11,18,48,.72) 50%,var(--night) 96%)}
+  background:linear-gradient(180deg,rgba(11,18,48,.6) 0%,rgba(11,18,48,.82) 45%,var(--night) 90%)}
 .hero__inner{padding:56px 0 52px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
 .pill{display:inline-block;padding:7px 16px;border-radius:999px;background:rgba(11,18,48,.6);border:1px solid var(--line);
   font-weight:700;font-size:15px;color:var(--gold-2)}
-.hero h1{font-size:clamp(38px,4.6vw,62px);line-height:1.1;margin:16px 0 12px}
+.hero h1{font-size:clamp(38px,4.6vw,62px);line-height:1.1;margin:16px 0 12px;text-shadow:0 3px 18px rgba(0,0,0,.8)}
 .hero h1 .glow{color:var(--gold)}
-.lead{font-size:clamp(18px,2.2vw,21px);color:#e7e3d8;margin:0 0 24px;max-width:520px}
+.lead{font-size:clamp(18px,2.2vw,21px);color:#fff;font-weight:500;text-shadow:0 2px 12px rgba(0,0,0,.9);margin:0 0 24px;max-width:520px}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero__price{margin-top:22px;color:var(--muted);font-size:16px}
+.hero__price{margin-top:22px;color:#fff;font-weight:600;font-size:16px;text-shadow:0 2px 10px rgba(0,0,0,.9)}
 .hero__price b{font-family:"Suez One",serif;font-weight:400;font-size:40px;color:var(--gold);line-height:1;margin-inline:6px}
 .hero__product{margin:0;position:relative;border-radius:24px;overflow:hidden;border:2px solid rgba(245,192,74,.5);
   box-shadow:0 30px 70px rgba(0,0,0,.5);aspect-ratio:4/3;background:#1a2244}
