@@ -3,12 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>רמקול לשיירות האור | מבצע חנוכה</title>
-<meta name="description" content="רמקול 400W מגנטי ועמיד לגשם לגג הרכב. 250₪ ליח' בהזמנת 10 יח', משלוח חינם בתיאום מראש. סגירת הזמנות: יב' כסלו.">
-<meta property="og:title" content="רמקול לשיירות האור – מבצע חנוכה 🕎">
-<meta property="og:description" content="400W · עמיד לגשם · מגנטים חזקים · בלוטוס/USB + מיקרופון · מתחבר למצת. 250₪ ליח' בהזמנת 10 יח'.">
+<title>רמקול לשיירות האור | חב"ד לוד</title>
+<meta name="description" content="רמקול 400W מגנטי ועמיד לגשם לגג הרכב, לקהילת חב&quot;ד לוד. 300₪ ליח'.">
+<meta property="og:title" content="רמקול לשיירות האור – חב&quot;ד לוד 🕎">
+<meta property="og:description" content="400W · עמיד לגשם · מגנטים חזקים · בלוטוס/USB + מיקרופון · מתחבר למצת. 300₪ ליח'.">
 <meta property="og:image" content="https://ramkol-shayarot.netlify.app/assets/img/speaker-roof-front.jpg">
-<meta property="og:url" content="https://ramkol-shayarot.netlify.app/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0b1230">
 
@@ -64,7 +63,6 @@ a{color:var(--gold-2)}
 }
 .btn:hover{transform:translateY(-2px)}
 .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(255,255,255,.35);box-shadow:none}
-.btn.wa{background:#25d366;color:#06240f;box-shadow:none}
 .btn:focus-visible,input:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid var(--gold-2);outline-offset:3px}
 
 /* ---------- HERO ---------- */
@@ -88,19 +86,9 @@ a{color:var(--gold-2)}
 .chip{padding:5px 11px;border-radius:999px;background:rgba(11,18,48,.85);font-weight:700;font-size:14px}
 .chip.gold{background:var(--gold);color:#1b1300}
 
-/* ---------- COUNTDOWN ---------- */
-.countdown{background:var(--night-3);border-block:1px solid var(--line)}
-.countdown .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 28px;padding:16px 0}
-.cd__label{font-weight:800;font-size:18px;line-height:1.3}
-.cd__label small{display:block;color:var(--muted);font-weight:500;font-size:14px}
-.cd__boxes{display:flex;gap:8px;direction:ltr;align-items:flex-start}
-.cd__box{min-width:68px;padding:8px 6px 6px;border-radius:12px;background:#060a1c;border:1px solid var(--line);text-align:center}
-.cd__box b{display:block;font-family:"Orbitron","Courier New",monospace;font-weight:700;font-size:26px;line-height:1.15;
-  color:var(--gold-2);font-variant-numeric:tabular-nums;letter-spacing:1px;text-shadow:0 0 12px rgba(245,192,74,.45)}
-.cd__box span{font-size:13px;color:var(--muted)}
-.cd__sep{font-family:"Orbitron",monospace;font-size:24px;color:var(--gold);padding-top:8px}
-.stock{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:#ffd2b5}
-.stock::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--flame)}
+/* partner logos */
+.logos{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.logos img{height:84px;width:auto;padding:6px 10px;border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 
 /* ---------- SECTIONS ---------- */
 section{padding:72px 0}
@@ -202,7 +190,7 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
 @media (max-width:900px){
   .hero__inner{grid-template-columns:1fr;text-align:center;gap:28px;padding:36px 0 40px}
   .lead{margin-inline:auto}
-  .hero__cta{justify-content:center}
+  .hero__cta,.logos{justify-content:center}
   .hero__product{max-width:460px;width:100%;margin-inline:auto}
   .get,.order{grid-template-columns:1fr}
   .order__side{position:static}
@@ -214,8 +202,7 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
   body{font-size:16px}
   section{padding:56px 0}
   .row{grid-template-columns:1fr}
-  .cd__box{min-width:58px}
-  .cd__box b{font-size:22px}
+  .logos img{height:64px}
   .video-grid{gap:10px}
   .photos{gap:8px}
   form,.price-card{padding:20px 16px}
@@ -232,14 +219,18 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
        srcset="assets/img/hero-bg-720.webp 720w, assets/img/hero-bg-1280.webp 1108w" sizes="100vw">
   <div class="wrap hero__inner">
     <div>
-      <span class="pill">🕎 מבצע חנוכה · המלאי מוגבל</span>
+      <div class="logos">
+        <img src="assets/img/logo-770-lod.webp" width="317" height="360" decoding="async" alt="כיכר משיח 770 – שיכון חב&quot;ד לוד">
+        <img src="assets/img/logo-kehila-lod.webp" width="629" height="300" decoding="async" alt="קהילה בשליחות – חב&quot;ד לוד מביאים גאולה">
+      </div>
+      <span class="pill">🕎 מבצע חנוכה לקהילת חב"ד לוד · המלאי מוגבל</span>
       <h1 class="display">השיירה שלך עומדת <span class="glow">להישמע אחרת</span></h1>
       <p class="lead">רמקול 400W לגג הרכב. מצמידים עם מגנטים, מחברים למצת ומתחילים לנגן. בלי מגבר ובלי כבלים בכל הרכב.</p>
       <div class="hero__cta">
         <a class="btn" href="#order">להזמנה ←</a>
         <a class="btn ghost" href="#media">▶ צפו בסרטונים</a>
       </div>
-      <div class="hero__price">רק<b>250<span class="cur">₪</span></b>ליח' · מינימום 10 יח' · משלוח חינם</div>
+      <div class="hero__price">רק<b>300<span class="cur">₪</span></b>ליח'</div>
     </div>
     <figure class="hero__product">
       <img fetchpriority="high" decoding="async" width="1200" height="901"
@@ -251,23 +242,6 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
     </figure>
   </div>
 </header>
-
-<!-- ================= COUNTDOWN ================= -->
-<div class="countdown" aria-live="polite">
-  <div class="wrap">
-    <div class="cd__label" id="cdLabel">סגירת הזמנות למשלוח<small>יב' כסלו · יום א' 22.11</small></div>
-    <div class="cd__boxes" id="cdBoxes">
-      <div class="cd__box"><b id="cdD">--</b><span>ימים</span></div>
-      <div class="cd__sep">:</div>
-      <div class="cd__box"><b id="cdH">--</b><span>שעות</span></div>
-      <div class="cd__sep">:</div>
-      <div class="cd__box"><b id="cdM">--</b><span>דקות</span></div>
-      <div class="cd__sep">:</div>
-      <div class="cd__box"><b id="cdS">--</b><span>שניות</span></div>
-    </div>
-    <span class="stock">המלאי מוגבל</span>
-  </div>
-</div>
 
 <main>
 <!-- ================= WHAT YOU GET ================= -->
@@ -332,23 +306,20 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
     <div class="head">
       <span class="eyebrow">הזמנה</span>
       <h2 class="h2 display">שריינו רמקולים לשיירה</h2>
-      <p class="sub">ממלאים פרטים, ואנחנו חוזרים אליכם לתיאום המשלוח.</p>
+      <p class="sub">ממלאים פרטים, ואנחנו חוזרים אליכם לתיאום.</p>
     </div>
     <div class="order">
       <div class="order__side">
       <aside class="price-card">
-        <div class="price">250<small>₪</small></div>
-        <div class="per">ליחידה · בהזמנת מינימום 10 יח'</div>
+        <div class="price">300<small>₪</small></div>
+        <div class="per">ליחידה</div>
         <ul>
-          <li>משלוח חינם, בתיאום מראש</li>
           <li>אחריות חודשיים על מוצר לא תקין</li>
-          <li>סגירת הזמנות למשלוח: יב' כסלו</li>
         </ul>
-        <p class="note">ייתכן שיהיה אפשר לרכוש יחידות בודדות, במחיר גבוה יותר ובתוספת משלוח.</p>
       </aside>
       <div class="tzave">
         <h3 class="display">"ואתה תצווה"</h3>
-        <p>כל רכב עם רמקול הוא עוד נקודה של אור ושמחה ברחוב. אם תארגנו הזמנה משותפת לכל השיירה, תגיעו בקלות למינימום.</p>
+        <p>כל רכב עם רמקול הוא עוד נקודה של אור ושמחה ברחוב.</p>
       </div>
       </div>
 
@@ -369,39 +340,27 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
           </div>
           <div class="row">
             <div class="field">
-              <label for="f_city">עיר <span class="req">*</span></label>
-              <input id="f_city" name="city" autocomplete="address-level2" required>
-              <div class="err">נא למלא עיר</div>
+              <label for="f_address">כתובת <span class="req">*</span></label>
+              <input id="f_address" name="address" autocomplete="street-address" required placeholder="רחוב, מספר בית ודירה">
+              <div class="err">נא למלא כתובת</div>
             </div>
             <div class="field">
-              <label for="f_street">רחוב <span class="req">*</span></label>
-              <input id="f_street" name="street" autocomplete="address-line1" required placeholder="רחוב ומספר בית">
-              <div class="err">נא למלא רחוב</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="field">
-              <label for="f_apt">מספר דירה <span class="req">*</span></label>
-              <input id="f_apt" name="apt" inputmode="numeric" required>
-              <div class="err">נא למלא מספר דירה (אם אין, כתבו 0)</div>
-            </div>
-            <div class="field">
-              <label for="f_qty">מספר יחידות (מינימום 10) <span class="req">*</span></label>
+              <label for="f_qty">מספר יחידות <span class="req">*</span></label>
               <div class="qty">
                 <button type="button" data-step="-1" aria-label="הפחת יחידה">−</button>
-                <input id="f_qty" name="qty" type="number" inputmode="numeric" min="10" step="1" value="10" required>
+                <input id="f_qty" name="qty" type="number" inputmode="numeric" min="1" step="1" value="1" required>
                 <button type="button" data-step="1" aria-label="הוסף יחידה">+</button>
               </div>
-              <div class="err">ההזמנה המינימלית היא 10 יחידות</div>
+              <div class="err">נא להזין לפחות יחידה אחת</div>
             </div>
           </div>
           <div class="total">
-            <div>סה"כ<small>משלוח חינם (בתיאום מראש)</small></div>
-            <b id="total">2,500₪</b>
+            <div>סה"כ</div>
+            <b id="total">300₪</b>
           </div>
           <div class="field">
             <label for="f_notes">הערות</label>
-            <textarea id="f_notes" name="notes" placeholder="שם השיירה, זמנים נוחים למשלוח וכו'"></textarea>
+            <textarea id="f_notes" name="notes" placeholder="שם השיירה, זמנים נוחים לתיאום וכו'"></textarea>
           </div>
           <button class="btn" type="submit" id="submitBtn">שליחת הזמנה</button>
           <div class="form-msg" id="formMsg" role="alert"></div>
@@ -411,8 +370,7 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
         <div class="success" id="success" role="status">
           <div class="big">🎉</div>
           <h3 class="display">ההזמנה התקבלה!</h3>
-          <p class="sub">ניצור איתך קשר בקרוב לתיאום המשלוח. חנוכה שמח!</p>
-          <p style="margin-top:20px"><a class="btn wa js-share" href="#" target="_blank" rel="noopener">שתפו עם מנהלי שיירות 💬</a></p>
+          <p class="sub">ניצור איתך קשר בקרוב לתיאום. חנוכה שמח!</p>
         </div>
       </div>
     </div>
@@ -439,12 +397,11 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
   <div class="wrap">
     <h2 class="h3 display">יש שאלה?</h2>
     <a class="mail" href="mailto:ramkol770770@gmail.com" dir="ltr">✉️ ramkol770770@gmail.com</a>
-    <div><a class="btn wa js-share" href="#" target="_blank" rel="noopener">שתפו בוואטסאפ 💬</a></div>
     <div class="small">חנוכה שמח! 🕎</div>
   </div>
 </footer>
 
-<div class="sticky" id="sticky"><a class="btn" href="#order">להזמנה · 250₪ ליח' ←</a></div>
+<div class="sticky" id="sticky"><a class="btn" href="#order">להזמנה · 300₪ ליח' ←</a></div>
 
 <script>
 (function(){
@@ -452,39 +409,16 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
      The form submits straight to the organiser's Google Form.
      Entry IDs were taken from the form's public page. If you
      change the Google Form's questions, update these IDs. */
-  var GOOGLE_FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLScaUQPRPZyPgyJ0iGxr65sjdFXBCDUr56IydiRSbivYRnIOig/formResponse";
-  var GOOGLE_FORM_VIEW   = "https://docs.google.com/forms/d/e/1FAIpQLScaUQPRPZyPgyJ0iGxr65sjdFXBCDUr56IydiRSbivYRnIOig/viewform";
+  var GOOGLE_FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSdT0BbSElfJ2T9TRQINyhNqeIrnkHpIhP5r2eMZE-C0GcGHow/formResponse";
+  var GOOGLE_FORM_VIEW   = "https://docs.google.com/forms/d/e/1FAIpQLSdT0BbSElfJ2T9TRQINyhNqeIrnkHpIhP5r2eMZE-C0GcGHow/viewform";
   var ENTRY = {
     name:   "entry.1431250209", // שם מלא
     phone:  "entry.1266513555", // מספר פלאפון
-    city:   "entry.1404978930", // עיר
-    street: "entry.1735202055", // רחוב
-    apt:    "entry.2145305694", // מספר דירה
+    address:"entry.1404978930", // כתובת
     qty:    "entry.46273207",   // מספר יחידות להזמנה
     notes:  "entry.2010141633"  // הערות
   };
-  var PRICE = 250, MIN_QTY = 10;
-  // יב' כסלו תשפ"ז = יום א' 22.11.2026, end of day Israel time
-  var DEADLINE = new Date("2026-11-22T23:59:59+02:00").getTime();
-
-  /* ---------- countdown ---------- */
-  var cd = { d: byId("cdD"), h: byId("cdH"), m: byId("cdM"), s: byId("cdS") };
-  function pad(n){ return (n < 10 ? "0" : "") + n; }
-  function tick(){
-    var diff = DEADLINE - Date.now();
-    if (diff <= 0) {
-      byId("cdBoxes").style.display = "none";
-      byId("cdLabel").innerHTML = "ההזמנות למשלוח נסגרו<small>אפשר עדיין להשאיר פרטים, ונחזור אליכם בהקדם</small>";
-      return;
-    }
-    var t = Math.floor(diff / 1000);
-    cd.d.textContent = pad(Math.floor(t / 86400));
-    cd.h.textContent = pad(Math.floor(t % 86400 / 3600));
-    cd.m.textContent = pad(Math.floor(t % 3600 / 60));
-    cd.s.textContent = pad(t % 60);
-    setTimeout(tick, 1000);
-  }
-  tick();
+  var PRICE = 300, MIN_QTY = 1;
 
   /* ---------- sticky mobile CTA ---------- */
   var sticky = byId("sticky"), orderSec = byId("order");
@@ -494,13 +428,6 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
     sticky.classList.toggle("show", scrollY > innerHeight * .6 && !inOrder);
   }
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
-
-  /* ---------- share ---------- */
-  var shareText = "🕎 רמקול 400W לשיירות האור!\nעמיד לגשם, מגנטים לגג, בלוטוס/USB + מיקרופון, מתחבר למצת.\nרק 250₪ ליח' בהזמנת 10 יח', משלוח חינם.\nסגירת הזמנות: יב' כסלו.\n";
-  var pageUrl = /^https?:/.test(location.href) ? location.href.split("#")[0] : GOOGLE_FORM_VIEW;
-  document.querySelectorAll(".js-share").forEach(function(a){
-    a.href = "https://wa.me/?text=" + encodeURIComponent(shareText + pageUrl);
-  });
 
   /* ---------- quantity & total ---------- */
   var qty = byId("f_qty"), total = byId("total");
@@ -523,9 +450,7 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
   var rules = {
     f_name:  function(v){ return v.trim().length >= 2; },
     f_phone: function(v){ var d = v.replace(/\D/g, ""); return /^(0\d{8,9}|972\d{8,9})$/.test(d); },
-    f_city:  function(v){ return v.trim().length >= 2; },
-    f_street:function(v){ return v.trim().length >= 2; },
-    f_apt:   function(v){ return v.trim().length >= 1; },
+    f_address:function(v){ return v.trim().length >= 2; },
     f_qty:   function(v){ var q = Number(v); return Number.isInteger(q) && q >= MIN_QTY; }
   };
   function validate(input){
@@ -555,9 +480,7 @@ footer .small{color:var(--muted);font-size:14px;margin-top:20px}
     var data = new URLSearchParams();
     data.append(ENTRY.name,   byId("f_name").value.trim());
     data.append(ENTRY.phone,  byId("f_phone").value.trim());
-    data.append(ENTRY.city,   byId("f_city").value.trim());
-    data.append(ENTRY.street, byId("f_street").value.trim());
-    data.append(ENTRY.apt,    byId("f_apt").value.trim());
+    data.append(ENTRY.address,byId("f_address").value.trim());
     data.append(ENTRY.qty,    String(parseInt(qty.value, 10)));
     data.append(ENTRY.notes,  byId("f_notes").value.trim());
 
